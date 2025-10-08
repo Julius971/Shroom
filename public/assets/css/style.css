@@ -1,0 +1,41 @@
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS long-press */
+}
+
+button, img, a {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body img {
+    filter: invert(1) brightness(2);
+  }
+
+  body img.no-invert {
+    filter: none !important;
+  }
+
+  #map2 {
+    filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7) !important;
+  }
+}
+
+.green-500-filter {
+  filter: invert(59%) sepia(94%) saturate(425%) hue-rotate(85deg) brightness(95%) contrast(90%) !important;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  box-shadow: none !important;
+}
