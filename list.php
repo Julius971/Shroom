@@ -9,11 +9,15 @@
         <h1 class="text-xl font-bold text-gray-900 dark:text-white"><?= htmlspecialchars($GLOBALS['title']) ?></h1>
 
         <!-- Desktop button group -->
-        <div class="hidden md:flex space-x-2">
-            <a href="map.php" class="p-3 flex justify-center items-center dark-invert cursor-pointer">
+        <div class="flex space-x-2">
+            <button id="toggleListType" class="flex p-3 cursor-pointer">
+                <img class="h-6 w-6 green-500-filter" src="https://img.icons8.com/sf-regular/100/mushroom.png" alt="toggle shroom/findings" />
+				<!-- alt image https://img.icons8.com/sf-regular/100/search.png-->
+            </button>
+            <a href="index.php" class="p-3 hidden md:flex justify-center items-center dark-invert cursor-pointer">
                 <img class="h-6 w-6" src="https://img.icons8.com/sf-regular/100/address.png" alt="Map view" />
             </a>
-            <a href="settings.php" class="p-3 flex justify-center items-center dark-invert cursor-pointer">
+            <a href="settings.php" class="p-3 hidden md:flex justify-center items-center dark-invert cursor-pointer">
                 <img class="h-6 w-6" src="https://img.icons8.com/sf-regular/100/gear.png" alt="Settings" />
             </a>
             <button id="addSightingDesktop" class="hidden md:flex p-3 cursor-pointer">

@@ -24,7 +24,7 @@ if (mapContainer) {
 
      **/
 
-    L.tileLayer('https://{s}.google.com/vt?lyrs=m@221097413,traffic&x={x}&y={y}&z={z}',{
+    L.tileLayer('https://{s}.google.com/vt?lyrs=y@221097413,traffic&x={x}&y={y}&z={z}',{
         maxZoom: 20,
         subdomains:['mt0','mt1','mt2','mt3']
     }).addTo(map);
@@ -32,7 +32,7 @@ if (mapContainer) {
     
 
     const markerIcon = L.icon({
-        iconUrl: 'https://img.icons8.com/ios-glyphs/100/mushroom.png',
+        iconUrl: './assets/img/user.png',
         iconSize: [32, 37],
         iconAnchor: [16, 37],
         popupAnchor: [0, -30],
