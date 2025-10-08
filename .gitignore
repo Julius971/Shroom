@@ -2,6 +2,10 @@
 # PHP Project .gitignore
 # -------------------------------
 
+# IIS bullshit
+.well-known/
+web.config
+
 # Environment / Config
 .env
 

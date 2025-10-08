@@ -78,18 +78,6 @@
                     <input type="text" placeholder="Dein Name" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-black text-gray-900 dark:text-white"/>
                 </label>
 
-                <label class="block mb-4 flex items-center justify-between">
-                    Eigenschaft:
-                    <div class="flex items-center space-x-2">
-                        <span>Essbar</span>
-                        <input type="checkbox" id="toxicitySwitch" class="toggle-checkbox hidden">
-                        <label for="toxicitySwitch" class="toggle-label w-12 h-6 bg-gray-300 dark:bg-gray-700 rounded-full relative cursor-pointer">
-                            <span class="dot absolute left-0 top-0 w-6 h-6 bg-white rounded-full transition"></span>
-                        </label>
-                        <span>Giftig</span>
-                    </div>
-                </label>
-
                 <div class="flex justify-end space-x-2">
                     <button type="button" id="closeModal" class="px-4 py-2 bg-gray-300 dark:bg-gray-700 rounded">Abbrechen</button>
                     <button type="submit" class="px-4 py-2 bg-green-500 hover:bg-green-600 rounded text-white dark:text-black">Speichern</button>
@@ -101,4 +89,4 @@
 </body>
 
 <?php }
-include '../layout.php';
+include 'layout.php';

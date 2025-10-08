@@ -88,4 +88,4 @@
 </body>
 
 <?php }
-include '../layout.php';
+include 'layout.php';
