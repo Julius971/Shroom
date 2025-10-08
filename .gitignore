@@ -6,6 +6,9 @@
 .well-known/
 web.config
 
+# se update php
+update.php
+
 # Environment / Config
 .env
 
