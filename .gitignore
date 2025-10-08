@@ -1,0 +1,37 @@
+# -------------------------------
+# PHP Project .gitignore
+# -------------------------------
+
+# Environment / Config
+.env
+
+# Cache / logs
+*.log
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# OS-specific
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Local web servers
+.valet/
+
+# Build / temp
+dist/
+build/
+tmp/
+*.tmp
