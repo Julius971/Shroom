@@ -8,53 +8,51 @@
     <header class="fixed top-0 left-0 right-0 flex items-center justify-between px-4 py-3 bg-white/50 dark:bg-black/70 backdrop-blur-lg shadow z-50 h-12">
         <h1 class="text-xl font-bold text-gray-900 dark:text-white"><?= htmlspecialchars($GLOBALS['title']) ?></h1>
         <button id="addSightingDesktop" class="hidden md:flex p-3 cursor-pointer">
-            <img class="h-6 w-6 green-500-filter" src="https://img.icons8.com/sf-regular/100/plus-math.png" alt="Add Sighting" />
+            <img class="h-6 w-6 green-500-filter" src="assets/img/plus-math.png" alt="Add Sighting" />
         </button>
     </header>
 
-    <main class="flex-1 overflow-auto">
-        <div id="map" class="flex-1 w-full h-full relative z-0"></div>
-    </main>
+    <div id="map" style="width: 100%; height: calc(100vh - 3rem);" class="z-0"></div>
 
     <!-- Desktop left buttons -->
     <div class="flex flex-col space-y-2 fixed top-16 left-4 z-50">
         <button id="zoomIn" class="hidden md:flex bg-white/50 dark:bg-black/70 hover:bg-white/80 dark:hover:bg-black/90 p-3 backdrop-blur-lg rounded-full shadow flex justify-center items-center cursor-pointer">
-            <img class="h-6 w-6 text-gray-900 dark:text-white" src="https://img.icons8.com/sf-regular/100/plus-math.png" alt="Zoom In" />
+            <img class="h-6 w-6" src="assets/img/plus-math.png" alt="Zoom In" />
         </button>
         <button id="zoomOut" class="hidden md:flex bg-white/50 dark:bg-black/70 hover:bg-white/80 dark:hover:bg-black/90 p-3 backdrop-blur-lg rounded-full shadow flex justify-center items-center cursor-pointer">
-            <img class="h-6 w-6 text-gray-900 dark:text-white" src="https://img.icons8.com/sf-regular/100/minus-math.png" alt="Zoom Out" />
+            <img class="h-6 w-6" src="assets/img/minus-math.png" alt="Zoom Out" />
         </button>
         <button id="gotoLocation" class="bg-white/50 dark:bg-black/70 hover:bg-white/80 dark:hover:bg-black/90 p-3 backdrop-blur-lg rounded-full shadow flex justify-center items-center cursor-pointer">
-            <img class="h-6 w-6 text-gray-900 dark:text-white" src="https://img.icons8.com/sf-regular/100/center-direction.png" alt="Current Location" />
+            <img class="h-6 w-6" src="assets/img/center-direction.png" alt="Current Location" />
         </button>
     </div>
 
     <!-- Desktop right buttons -->
     <div class="hidden md:flex flex-col space-y-2 fixed top-16 right-4 z-50">
         <a href="list.php" class="bg-white/50 dark:bg-black/70 hover:bg-white/80 dark:hover:bg-black/90 p-3 backdrop-blur-lg rounded-full shadow flex justify-center items-center cursor-pointer">
-            <img class="h-6 w-6 text-gray-900 dark:text-white" src="https://img.icons8.com/sf-regular/100/ingredients-list.png" alt="list view" />
+            <img class="h-6 w-6 text-gray-900 dark:text-white" src="assets/img/ingredients-list.png" alt="list view" />
         </a>
         <a href="settings.php" class="bg-white/50 dark:bg-black/70 hover:bg-white/80 dark:hover:bg-black/90 p-3 backdrop-blur-lg rounded-full shadow flex justify-center items-center cursor-pointer">
-            <img class="h-6 w-6 text-gray-900 dark:text-white" src="https://img.icons8.com/sf-regular/100/gear.png" alt="Settings" />
+            <img class="h-6 w-6 text-gray-900 dark:text-white" src="assets/img/gear.png" alt="Settings" />
         </a>
     </div>
 
     <!-- Mobile tabbar -->
     <div class="md:hidden fixed bottom-4 left-4 right-[5.5rem] bg-white/50 dark:bg-black/70 backdrop-blur-lg rounded-full shadow flex justify-around px-6 py-2 z-40">
         <a class="flex flex-col items-center dark:text-white cursor-default">
-            <img class="h-6 w-6 mb-1 green-500-filter" src="https://img.icons8.com/sf-regular/100/address.png" alt="Map view" />
+            <img class="h-6 w-6 mb-1 green-500-filter" src="assets/img/address.png" alt="Map view" />
         </a>
         <a href="list.php" class="flex flex-col items-center text-gray-900 dark:text-white cursor-pointer">
-            <img class="h-6 w-6 mb-1 dark:invert" src="https://img.icons8.com/sf-regular/100/ingredients-list.png" alt="List view" />
+            <img class="h-6 w-6 mb-1 dark:invert" src="assets/img/ingredients-list.png" alt="List view" />
         </a>
         <a href="settings.php" class="flex flex-col items-center text-gray-900 dark:text-white cursor-pointer">
-            <img class="h-6 w-6 mb-1 dark:invert" src="https://img.icons8.com/sf-regular/100/gear.png" alt="Settings" />
+            <img class="h-6 w-6 mb-1 dark:invert" src="assets/img/gear.png" alt="Settings" />
         </a>
     </div>
 
     <!-- Floating Add Button -->
     <button id="addSightingMobile" class="md:hidden fixed bottom-2.5 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 cursor-pointer">
-        <img class="h-6 w-6 no-invert" src="https://img.icons8.com/sf-regular/100/plus-math.png" alt="Add Sighting" />
+        <img class="h-6 w-6 no-invert" src="assets/img/plus-math.png" alt="Add Sighting" />
     </button>
 
     <!-- Add Sighting Modal -->
@@ -89,4 +87,4 @@
 </body>
 
 <?php }
-include 'layout.php';
+include 'assets/php/layout.php';

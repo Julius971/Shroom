@@ -18,23 +18,24 @@ button, a {
   user-select: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  body img {
-    filter: invert(1) brightness(2);
-  }
+.dark body img:not(.no-invert):not(.leaflet-tile):not(.leaflet-marker-icon) {
+  filter: invert(1) brightness(2);
+}
 
-  body img.no-invert {
-    filter: none !important;
-  }
+.invert-filter {
+  filter: invert(1) brightness(2);
+}
 
-/*  #map {
-    filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7) !important;
-  }
-*/
+.gray-500-filter {
+  filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%) !important;
 }
 
 .green-500-filter {
   filter: invert(59%) sepia(94%) saturate(425%) hue-rotate(85deg) brightness(95%) contrast(90%) !important;
+}
+
+.red-500-filter {
+  filter: invert(37%) sepia(93%) saturate(7471%) hue-rotate(356deg) brightness(91%) contrast(135%) !important;
 }
 
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {

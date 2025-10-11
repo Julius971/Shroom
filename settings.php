@@ -8,12 +8,12 @@
     <header class="fixed top-0 left-0 right-0 flex items-center justify-between px-4 py-3 bg-white/50 dark:bg-black/70 backdrop-blur-lg shadow z-50 h-12">
         <h1 class="text-xl font-bold text-gray-900 dark:text-white"><?= htmlspecialchars($GLOBALS['title']) ?></h1>
         <a href="index.php" id="closePage" class="p-3 cursor-pointer">
-            <img class="h-6 w-6 green-500-filter" src="https://img.icons8.com/sf-regular/100/delete-sign.png" alt="Close" />
+            <img class="h-6 w-6 green-500-filter" src="assets/img/delete-sign.png" alt="Close" />
         </a>
     </header>
 
     <main class="mt-16 flex-1 overflow-auto p-4 flex justify-center">
-        <div class="w-full max-w-md space-y-6">
+        <div class="w-full max-w-xl space-y-6">
             
             <!-- Benutzername -->
             <div>
@@ -46,7 +46,7 @@
                     </select>
 
                     <img
-                        src="https://img.icons8.com/sf-regular/100/expand-arrow.png"
+                        src="assets/img/expand-arrow.png"
                         alt="Dropdown Arrow"
                         class="col-start-1 row-start-1 justify-self-end self-center mr-3 w-4 h-4 green-500-filter"
                     />
@@ -54,12 +54,16 @@
             </div>
 
             <!-- Erscheinungsbild -->
-            <div>
+            <div class="mt-4">
                 <label for="themeSelect" class="block text-sm font-medium mb-1">Erscheinungsbild</label>
                 <div class="grid relative">
                     <select
                         id="themeSelect"
-                        class="col-start-1 row-start-1 appearance-none bg-white dark:bg-black text-gray-900 dark:text-white border border-gray-300 dark:border-gray-600 rounded-lg w-full p-2 pr-8 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                        class="col-start-1 row-start-1 appearance-none
+                            bg-white dark:bg-black text-gray-900 dark:text-white
+                            border border-gray-300 dark:border-gray-600
+                            rounded-lg w-full p-2 pr-8
+                            focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
                     >
                         <option value="system">Systemstandard</option>
                         <option value="light">Hell</option>
@@ -67,11 +71,25 @@
                     </select>
 
                     <img
-                        src="https://img.icons8.com/sf-regular/100/expand-arrow.png"
+                        src="assets/img/expand-arrow.png"
                         alt="Dropdown Arrow"
                         class="col-start-1 row-start-1 justify-self-end self-center mr-3 w-4 h-4 green-500-filter"
                     />
                 </div>
+            </div>
+
+            <div class="mt-4 mb-6">
+                <label for="resetSettings" class="block text-sm font-medium mb-1">Aktionen</label>
+                <button
+                    id="resetSettings"
+                    class="w-full text-center p-2 border border-gray-300 dark:border-gray-600 rounded-lg
+                        bg-white dark:bg-black text-red-500 dark:text-red-400
+                        hover:bg-red-50 dark:hover:bg-red-900/30
+                        focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+                        transition"
+                >
+                    Alle Einstellungen zurücksetzen
+                </button>
             </div>
 
             <!-- Info section -->
@@ -80,10 +98,10 @@
                 <p>© <?= date('Y') ?> - devsforge.de</p>
                 <div class="flex justify-center space-x-4">
                     <a href="https://github.com/undeadd" target="_blank" class="hover:text-green-500 transition">
-                        <img class="h-7 w-7 green-500-filter" src="https://img.icons8.com/sf-regular/100/github.png" alt="GitHub" />
+                        <img class="h-7 w-7 green-500-filter" src="assets/img/github.png" alt="GitHub" />
                     </a>
                     <a href="https://devsforge.de/" target="_blank" class="hover:text-green-500 transition">
-                        <img class="h-7 w-7 green-500-filter" src="https://img.icons8.com/sf-regular/100/geography.png" alt="Instagram" />
+                        <img class="h-7 w-7 green-500-filter" src="assets/img/geography.png" alt="Instagram" />
                     </a>
                 </div>
             </div>
@@ -94,4 +112,4 @@
 </body>
 
 <?php }
-include 'layout.php';
+include 'assets/php/layout.php';
